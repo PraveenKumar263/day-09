@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexcontainer{
+           display:flex;
+           background-color: green;
+            height:100px;
+        }
+
+        .flexcontainer>div{
+         background-color: skyblue;
+         width:100px;
+         height:20px;
+         margin:2px
+        }
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    </div>
+</body>
+</html>
+
+
+Flex
+Pan card task...
+
+Flex: Flexibile Box (helpful in Allignments)
+it helps us to provide easy way to arrange elements within the container
+The usages of the flex box is to achiveve small layouts as well as responsiveness
+
+Advantages:
+proper spacing
+Allignments of elements
+flexiblity
+
+Note: Bootstrap 4 is built on the Flex box layout
+
+There are 2 main importtant components of Flex box:
+flex container
+flex items
+
+flex container:
+it is basically a box which will hold all the elements
+
+flex items:
+these are small div elements that are placed inside the flex containers
+
+if wee wanted to use flex box then we can use the 
+display:flex property
+
+flex axis:
+main axis
+cross axis
+
+flex container properties:
+flex-direction
+flex-wrap
+align-content
+justify-contents
+align-items
+
+https://cdn-scripbox-wordpress.scripbox.com/wp-content/uploads/2022/11/nsdl-change-form-1.png
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Card</title>
+    <style>
+        .heading {
+            background-color: brown;
+            text-align: center;
+            color: white;
+        }
+
+        u {
+            color: orange
+        }
+
+        span {
+            color: red
+        }
+
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        *{
+            margin:0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <b>Request for the Pan Card / Changes or Corrections in Pan Data</b>
+        <i>
+            <div>Fields Marked with <span>*</span> (asterik) are mandatory. To avoid mistake Please refer
+                <u>guideliness</u> and <u>instructions</u></div>
+        </i>
+    </div>
+    <table style="width:100%">
+        <tbody>
+            <tr>
+                <td></td>
+                <td><span>*</span><b>Whether he is a Citizen Of India</b>
+                    <label for="yes" style="padding-left: 40px;">Yes</label>
+                    <input type="radio" name="" id="yes">
+                    <label for="no" style="padding-left: 40px;">No</label>
+                    <input type="radio" name="" id="no">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><span>*</span><b>Permananet Account Number</b><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td style="width:4px;"><input type="checkbox" name="" id=""></td>
+                <td>
+                    <b>
+                        <span>*</span>
+                        1. Name
+                    </b>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td > 
+                    <b>Title</b>
+                    <label for="smt" style="padding-left: 40px;">Shri/smt</label>
+                    <input type="radio" name="" id="smt">
+                    <label for="sri" style="padding-left: 40px;">Shri/sri</label>
+                    <input type="radio" name="" id="sri">
+                    <label for="kumari" style="padding-left: 40px;">Shri/kumari</label>
+                    <input type="radio" name="" id="kumari">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                <div style="display: inline-block;">
+                  <label for="Lastname"><b>Lastname/surname</b></label><br>
+                  <input type="text" name="" id="Lastname">
+                </div>
+
+                 <div style="display:inline-block; padding-left: 150px;">
+                    <label for="Firstname"><b>Firstname</b></label><br>
+                    <input type="text" name="" id="Firstname">
+                  </div>
+
+
+                  <div style="display:inline-block; padding-left: 150px;">
+                    <label for="Middlename"><b>Middlename</b></label><br>
+                    <input type="text" name="" id="Middlename">
+                  </div>
+               </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

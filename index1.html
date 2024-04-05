@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            margin:2px
+        }
+        .main1{
+            margin-left: 30px;
+            border:1px solid black;
+           
+        }
+        main{
+            padding-left: 200px
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+     <div class="main">this is div</div>
+     <div class="main">this is span</div>
+    </div>
+    <p>this is p</p>
+    <span>this is span</span>
+</body>
+</html>
+
+Box Model
+Position Properties
+
+Box Model:
+it is a box that is wrapped around every HTML elements
+It consist of 
+Margin
+Border
+Padding
+
+margin:
+It is a Imaginary Space Around the HTML element
+syntax:margin:top,right, bottom,left
+
+here the sizes are mentioned in terms of px
+margin-top:
+margin-right
+margin-bottom
+margin-left
+
+
+Border:
+It is a Thick Visible Line
+style:border:width style color
+
+
+Padding: it is a imaginary space around a content
+syntax:padding:top,right,bottom,left
+
+
+
+Box Model
+Position Properties
+
+Box Model:
+it is a box that is wrapped around every HTML elements
+It consist of 
+Margin
+Border
+Padding
+
+margin:
+It is a Imaginary Space Around the HTML element
+syntax:margin:top,right, bottom,left
+
+here the sizes are mentioned in terms of px
+margin-top:
+margin-right
+margin-bottom
+margin-left
+
+
+Border:
+It is a Thick Visible Line
+style:border:width style color
+
+
+Padding: it is a imaginary space around a content
+syntax:padding:top,right,bottom,left
+
+Position Properties:
+Even though you have Top,Right,Bottom, Letf,Margin, Padding...
+on What Factors they have to be Placed...
+1. Static
+2. Relative
+3. Absolute
+4.Fixed
+5.Sticky
+
+
+Static:
+it is a default Position Property 
+They are Not get Affected by Top,Left,Bottom or Right
+All Html Elements are Positioned static By default
+
+
+Relative: Position an element based on its current position without changing layout.
+They are get Afftected by Top,Right,Bottom, Left
+A space is created for them in the Document
+It will be placed w.r.t to first positioned elements..
+
+
+Absolute: Position an element based on its current position without changing layout.
+They are get Afftected by Top,Right,Bottom, Left
+No space is created for them in the Document
+It will be placed w.r.t to first positioned elements..
+Absolute Has to be used in the combination of Relative
+Ex: if the Child is absolute then the parent has to be relative...
+
+In summary, relative positioning moves an element relative to its default position on the page, 
+while absolute positioning moves an element relative to its nearest positioned ancestor.
+https://codingbff.medium.com/difference-between-css-position-absolute-versus-relative-35f064384c6
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+        background-color: green;
+        position: relative;
+        
+        }
+        .child1{
+         background-color: orange;
+         position: absolute;
+         top:20px;
+        }
+        .child2{
+        background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">This is Child1</div>
+        <div class="child2">This is Child2</div>
+    </div>
+</body>
+</html>
+
+Fixed:
+The elements are not affected by scrolling
+
+Sticky:
+They get  afftected by scrolling
+once the distance got reached then it will remain Fixed
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            top:0px;
+            position: sticky;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">this is a div</div>
+    <div style="padding-bottom: 200%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui tempore similique libero ducimus atque nesciunt et aliquam. Fugit, doloribus? Officiis, cum eos dolorum fugiat consequatur et quia. Quis, dolorum?</div>
+</body>
+</html>
